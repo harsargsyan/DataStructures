@@ -20,4 +20,5 @@ public class MyEntry<K, V> {
     public void setValue(V value) {
         this.value = value;
     }
+
 }
