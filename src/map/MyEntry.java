@@ -1,6 +1,6 @@
 package map;
 
-public class MyEntry<K, V> {
+class MyEntry<K, V> {
     private final K key;
     private V value;
 
@@ -9,16 +9,15 @@ public class MyEntry<K, V> {
         this.value=value;
     }
 
-    public K getKey() {
+    K getKey() {
         return key;
     }
 
-    public V getValue() {
+    V getValue() {
         return value;
     }
 
-    public void setValue(V value) {
+    void setValue(V value) {
         this.value = value;
     }
-
 }

@@ -53,6 +53,8 @@ public class MyMap<K, V> {
         return mySet;
     }
 
+    // utility methods
+
     private void checkCapacity() {
         if (size == entries.length) {
             int newSize = size * 2;
@@ -60,14 +62,13 @@ public class MyMap<K, V> {
         }
     }
 
-    public void condenseArray(int start) {
+    private void condenseArray(int start) {
         for (int i=start; i<size; i++) {
             entries[i] = entries[i+1];
         }
     }
 
-    public int getSize() {
+    private int getSize() {
         return size;
     }
-
 }
